@@ -24,7 +24,7 @@
     <ion-col>
       <ion-list *ngIf="tasks.length>0">
           <ion-item-sliding *ngFor="let item of tasks; let i=index">
-            <ion-item-options side="start" (ionSwipe)="completeTask(i)" (dblclick)="addFavoriteTask(i)">
+            <ion-item-options side="start" (ionSwipe)="completeTask(i)">
               <ion-item-option expandable color="success">
                 <ion-icon name="checkmark-done-outline"></ion-icon>
               </ion-item-option>

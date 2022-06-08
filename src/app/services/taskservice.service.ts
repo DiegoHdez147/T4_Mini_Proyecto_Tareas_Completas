@@ -45,27 +45,4 @@ export class TaskserviceService {
     this.tasks.push(this.completedTasks[pos]);
     this.removeCompleteTask(pos);
   }
-
-  public addFavoriteTask(pos : number){
-    this.favoriteTasks.push(this.tasks[pos]);
-    this.removeTask(pos);
-  }
-
-  public removeFavoriteTask(pos : number){
-    this.favoriteTasks.splice(pos,1);
-  }
-
-  public degradeFavoriteTask(pos : number){
-    this.tasks.push(this.favoriteTasks[pos]);
-    this.removeFavoriteTask(pos);
-  }
-
-  public getFavoriteTasks(){
-    return this.favoriteTasks;
-  }
-
-  public completeFavoriteTask(pos: number){
-    this.completedTasks.push(this.favoriteTasks[pos]);
-    this.removeFavoriteTask(pos);
-  }
 }

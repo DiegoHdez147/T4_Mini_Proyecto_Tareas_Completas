@@ -31,10 +31,4 @@ export class Tab1Page {
     this.taskService.completeTask(pos)
     this.tasks = this.taskService.getTasks();
   }
-
-  public addFavoriteTask(pos : number){
-    this.taskService.addFavoriteTask(pos);
-    this.tasks = this.taskService.getTasks();
-  }
-
 }
